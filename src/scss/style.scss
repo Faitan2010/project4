@@ -10,3 +10,12 @@ body{
 .container {
 	max-width: 1200px;
 }
+.div-with-image{
+	.image-for-change {
+		border-bottom-left-radius: 200px 200px;
+		&:hover {
+			border-bottom-left-radius: unset;
+			transition: all ease-in-out .5s;
+		}
+	}
+}
