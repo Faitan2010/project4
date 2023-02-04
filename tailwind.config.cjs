@@ -65,13 +65,8 @@ module.exports = {
                 ],
             },
             colors: {
-                'dark-green': '#00735E',
-                'light-green': '#BCE7AE',
-                'white-green': '#DEF3D7',
-                red: '#FF6565',
-                pink: '#F4BDBD',
-                'dark-white': '#F3FFF8',
-                violet: '#692685'
+                'dark-black': '#000000',
+                grey:'#565656'
             },
             screens: {
                 'max-2xl': {'max': '1440px'},
