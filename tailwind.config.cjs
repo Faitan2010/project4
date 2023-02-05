@@ -75,9 +75,7 @@ module.exports = {
                 'costil':'1100px'
             },
             gridTemplateColumns: {
-                'country-table-row': '24px 26.88% 32px minmax(0, 1fr)',
-                'country-table': '47% minmax(0, 1fr)',
-                'country-table-flag' : '34.2% minmax(0, 1fr)',
+                'country-table-flag' : '37% minmax(0, 1fr)',
                 'country-table-text': '32px minmax(0, 1fr)',
                 'country-table-image': '24px minmax(0, 1fr)',
                 'country-table-tablet': '30% minmax(0, 1fr)',
