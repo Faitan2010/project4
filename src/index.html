@@ -10,7 +10,7 @@
 </head>
 <body class="overflow-x-hidden text-grey">
     <header class="header-info fixed z-[999] top-0 w-full bg-white transition-all duration-500">
-        <div class="relative container pt-10.5 pb-10 flex mx-auto justify-between px-5">
+        <div class="relative container pt-10.5 pb-10 flex mx-auto justify-between px-5 menu-icon active">
             <div class="">
                 <a href="#">
                     <svg width="120" height="21" viewBox="0 0 120 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@
                         </svg>                    
                 </a>
             </div>
-            <div class="lg:flex hidden gap-15 text-dark-black text-base">
+            <div class="flex lg:flex-row flex-col gap-15 text-dark-black text-base header-on-mobile">
                 <div class="">
                     <a href="#" class="text-dark-black">
                         Home
@@ -50,8 +50,8 @@
                     </a>
                 </div>
             </div>
-            <div class="menu-icon lg:hidden block w-8 h-5 relative right-0 top-0 before:w-full before:h-0.5 before:absolute before:bg-[#2639ED] before:left-0 before:top-0 before:content-[''] cursor-pointer after::w-full after:h-0.5 after:absolute after:bg-[#2639ED] after:left-0 after:bottom-0 after:content-[''] after:w-full">
-                <span class="menu-icon-line w-full h-0.5 bg-[#2639ED] absolute left-0 top-[50%] translate-y-[-50%]"></span>
+            <div class="menu-icon lg:hidden block w-8 h-5 relative right-0 top-0 before:w-full before:h-0.5 before:absolute before:bg-[#2639ED] before:left-0 before:top-0 before:content-[''] cursor-pointer after::w-full after:h-0.5 after:absolute after:bg-[#2639ED] after:left-0 after:bottom-0 after:content-[''] after:w-full ">
+                <span class="menu-icon-line w-full h-0.5 bg-[#2639ED] absolute left-0 top-[50%] translate-y-[-50%] active:none"></span>
             </div>
         </div>
     </header>
