@@ -65,3 +65,23 @@ body{
 		background-color: #2639ED;
 	}
 }
+@media (max-width: 1024px) {
+	.slick-dots {
+		bottom: 50px;
+		right: calc((100% - 400px) / 2);
+	}
+}
+@media (max-width: 768px) {
+	.slick-dots {
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+.slick-slide.slick-current.slick-active {
+	display: block;
+
+}
+.slick-slide.slick-cloned {
+	display: none;
+}

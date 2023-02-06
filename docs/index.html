@@ -10,7 +10,7 @@
 </head>
 <body class="overflow-x-hidden text-grey">
     <header class="header-info fixed z-[999] top-0 w-full bg-white transition-all duration-500">
-        <div class="container pt-10.5 pb-10 flex mx-auto justify-between px-5">
+        <div class="relative container pt-10.5 pb-10 flex mx-auto justify-between px-5">
             <div class="">
                 <a href="#">
                     <svg width="120" height="21" viewBox="0 0 120 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@
                         </svg>                    
                 </a>
             </div>
-            <div class="flex gap-15 text-dark-black text-base">
+            <div class="lg:flex hidden gap-15 text-dark-black text-base">
                 <div class="">
                     <a href="#" class="text-dark-black">
                         Home
@@ -49,6 +49,9 @@
                         Contact
                     </a>
                 </div>
+            </div>
+            <div class="menu-icon lg:hidden block w-8 h-5 relative right-0 top-0 before:w-full before:h-0.5 before:absolute before:bg-[#2639ED] before:left-0 before:top-0 before:content-[''] cursor-pointer after::w-full after:h-0.5 after:absolute after:bg-[#2639ED] after:left-0 after:bottom-0 after:content-[''] after:w-full">
+                <span class="menu-icon-line w-full h-0.5 bg-[#2639ED] absolute left-0 top-[50%] translate-y-[-50%]"></span>
             </div>
         </div>
     </header>
@@ -592,15 +595,15 @@
                 Several selected clients, who already believe in our service.
             </p>
         </div>
-        <div class="flex xl:gap-5 justify-between xl:flex-row flex-col gap-10 max-w-max mx-auto xl:mx-[unset]">
-            <div class="slider-container max-w-[868px]">
-                <div class="flex-important gap-5 justify-between items-center">
-                    <div class="max-w-[389px] relative z-20 pl-3">
+        <div class="flex xl:gap-5 justify-between xl:flex-row flex-col gap-10 max-w-max mx-auto xl:mx-[unset] relative z-50">
+            <img src="./img/slider-img/Ellipse94.svg" alt="#" class="absolute z-10 xl:left-0 xl:bottom-3 xl:top-[unset] top-[257px] md:left-0 left-[20%] sm:block hidden">
+            <img src="./img/Dot.svg" alt="#" class="absolute -top-10.5 left-[230px]">
+            <div class="slider-container max-w-[868px] relative z-50">
+                <div class="flex-important gap-5 justify-between items-center relative md:flex-row flex-col sm:max-w-max max-w-[350px]">
+                    <div class="max-w-[389px] relative z-20 ml-3">
                         <img src="./img/slider-img/image-man.png" alt="#" class="relative z-20 bg-cover ml-3 shadow-lg object-cover rounded-[500px_500px_0px_500px]" width="389px" height="389px">
-                        <img src="./img/slider-img/Ellipse94.svg" alt="#" class="absolute z-10 xl:left-0 left-1 bottom-3">
-                        <img src="./img/Dot.svg" alt="#" class="absolute -top-10.5 -right-9">
                     </div>
-                    <div class="max-w-[420px]">
+                    <div class="max-w-[420px] md:pt-0 pt-5">
                         <h2 class="text-2xl font-semibold text-black pb-5">
                             Matthew Paul
                         </h2>
@@ -609,11 +612,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex-important gap-5 justify-between items-center relative">
-                    <div class="max-w-[389px] relative z-20 pl-3">
+                <div class="flex-important gap-5 justify-between items-center relative md:flex-row flex-col">
+                    <div class="max-w-[389px] relative z-20 ml-3">
                         <img src="./img/slider-img/image-man.png" alt="#" class="relative z-20 bg-cover ml-3 shadow-lg object-cover rounded-[0px_500px_500px_500px]" width="389px" height="389px">
-                        <img src="./img/slider-img/Ellipse94.svg" alt="#" class="absolute z-10 left-0 bottom-3">
-                        <img src="./img/Dot.svg" alt="#" class="absolute -top-10.5 -right-9">
                     </div>
                     <div class="max-w-[420px]">
                         <h2 class="text-2xl font-semibold text-black pb-5">
@@ -624,11 +625,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex-important gap-5 justify-between items-center">
-                    <div class="max-w-[389px] relative z-20 pl-3">
+                <div class="flex-important gap-5 justify-between items-center relative md:flex-row flex-col">
+                    <div class="max-w-[389px] relative z-20 ml-3">
                         <img src="./img/slider-img/image-man.png" alt="#" class="relative z-20 bg-cover ml-3 shadow-lg object-cover rounded-[500px_0px_500px_500px]" width="389px" height="389px">
-                        <img src="./img/slider-img/Ellipse94.svg" alt="#" class="absolute z-10 left-0 bottom-3">
-                        <img src="./img/Dot.svg" alt="#" class="absolute -top-10.5 -right-9">
                     </div>
                     <div class="max-w-[420px]">
                         <h2 class="text-2xl font-semibold text-black pb-5">
@@ -639,11 +638,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex-important justify-between items-center">
-                    <div class="max-w-[389px] relative z-20 pl-3">
+                <div class="flex-important gap-5 justify-between items-center relative md:flex-row flex-col">
+                    <div class="max-w-[389px] relative z-20 ml-3">
                         <img src="./img/slider-img/image-man.png" alt="#" class="relative z-20 bg-cover ml-3 shadow-lg object-cover rounded-[500px_500px_500px_0px]" width="389px" height="389px">
-                        <img src="./img/slider-img/Ellipse94.svg" alt="#" class="absolute z-10 left-0 bottom-3">
-                        <img src="./img/Dot.svg" alt="#" class="absolute -top-10.5 -right-9">
                     </div>
                     <div class="max-w-[420px]">
                         <h2 class="text-2xl font-semibold text-black pb-5">
