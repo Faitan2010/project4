@@ -86,7 +86,10 @@ body{
         transform: translateX(-120vw);
 		text-align: center;
 	}
-	.menu-icon.active .header-on-mobile {
+	.header-on-mobile.active {
+		height: calc(100vh - 73px);
+	}
+	.menu-header.active .header-on-mobile {
 		transform: translateX(0);
 	}
 }
@@ -107,19 +110,23 @@ body{
 .menu-icon-line {
 	display: block;
 }
-.menu-icon.active .menu-icon-line {
+.menu-header.active .menu-icon-line {
 	display: none;
 }
-.menu-icon.active .menu-icon::before {
+.menu-header.active .menu-icon::before {
     transform-origin: center;
     transform: translate(-50%, -50%) rotate(45deg);
     left: 50%;
     top: 63%;
     
 }
-.menu-icon.active .menu-icon::after {
+.menu-header.active .menu-icon::after {
 	transform-origin: center;
     transform: translate(-50%, 50%) rotate(-45deg);
     left: 50%;
     top: 50%;
+}
+.header-animate {
+    transform: translateY(-30px);
+
 }
