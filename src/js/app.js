@@ -1,6 +1,9 @@
 
 
 $(document).ready(function(){
+
+    new WOW().init();
+
     $('.slider-container').slick({
       infinite: true,
       slidesToShow: 1,
@@ -44,6 +47,10 @@ $(document).ready(function(){
 })
   const anchorButton = new AnchorButton()
     anchorButton.init()
+
+
+
+    
   });
 
 
