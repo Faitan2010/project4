@@ -48,10 +48,24 @@ $(document).ready(function(){
   const anchorButton = new AnchorButton()
     anchorButton.init()
 
+  const submitForm = new SubmitForm()
 
 
     
   });
+
+
+function SubmitForm (form) {
+  if (!form) {
+    return;
+  }
+  const _this = this;
+  this.formField = form.querySelector('#email-form');
+  this.emailInput = form.querySelector('.email');
+  this.EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+}
+
 
 
 
@@ -71,21 +85,3 @@ function AnchorButton() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-  // var hiddenElement = document.getElementById("box") - вторая кнопка;
-  // var btn = document.querySelector('.btn') - якорь;
-  
-  // function handleButtonClick() {
-  //    hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
-  // }
-  
-  // btn.addEventListener('click', handleButtonClick);

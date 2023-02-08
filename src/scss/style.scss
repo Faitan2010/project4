@@ -3,50 +3,50 @@
 @tailwind utilities;
 
 @import "fonts";
-html {
-	--header-size: 103px;
-	--scrollbar-height: 3px;
-	--scrollbar-bg: #ddd;
-	--scrollbar-progress-color: #0089f2;
-  }
-html.active {
-	--header-size: 73px;
-}
+// html {
+// 	--header-size: 103px;
+// 	--scrollbar-height: 3px;
+// 	--scrollbar-bg: #ddd;
+// 	--scrollbar-progress-color: #0089f2;
+//   }
+// html.active {
+// 	--header-size: 73px;
+// }
   
-  header {
-	position: fixed;
-	top: 0;
-	height: var(--header-size);
-	width: 100%;
-	background: white;
-  }
+//   header {
+// 	position: fixed;
+// 	top: 0;
+// 	height: var(--header-size);
+// 	width: 100%;
+// 	background: white;
+//   }
   
-  .first-section {
-	margin-top: calc(var(--header-size) + var(--scrollbar-height));
-	padding: 3px;
-  }
+//   .first-section {
+// 	margin-top: calc(var(--header-size) + var(--scrollbar-height));
+// 	padding: 3px;
+//   }
   
-  body {
-	background: linear-gradient(
-	  to right top,
-	  var(--scrollbar-progress-color) 50%,
-	  var(--scrollbar-bg) 50%
-	);
-	background-size: 100%
-	  calc(100% - 100vh + var(--header-size) + var(--scrollbar-height) + 1px);
-	background-repeat: no-repeat;
-	margin: 0;
-	font-family: "Open Sans", sans-serif;
-  }
-  body::before {
-	content: "";
-	position: fixed;
-	top: calc(var(--header-size) + var(--scrollbar-height));
-	bottom: 0;
-	width: 100%;
-	z-index: -1;
-	background: white;
-  }
+//   body {
+// 	background: linear-gradient(
+// 	  to right top,
+// 	  var(--scrollbar-progress-color) 50%,
+// 	  var(--scrollbar-bg) 50%
+// 	);
+// 	background-size: 100%
+// 	  calc(100% - 100vh + var(--header-size) + var(--scrollbar-height) + 1px);
+// 	background-repeat: no-repeat;
+// 	margin: 0;
+// 	font-family: "Open Sans", sans-serif;
+//   }
+//   body::before {
+// 	content: "";
+// 	position: fixed;
+// 	top: calc(var(--header-size) + var(--scrollbar-height));
+// 	bottom: 0;
+// 	width: 100%;
+// 	z-index: -1;
+// 	background: white;
+//   }
 
 
 
@@ -144,13 +144,16 @@ html.active {
 		transform: translate(-50%);
 	}
 }
-.slick-slide.slick-current.slick-active {
-	display: block;
+@media (max-width: 640px) {
+	.div-with-image{
+	.image-for-change {
+		transition: all ease-in-out .5s;
+		border-bottom-left-radius: 20px 20px;
+		border-radius: 20px;
+	}
+}
+}
 
-}
-.slick-slide.slick-cloned {
-	display: none;
-}
 .menu-icon-line {
 	display: block;
 }
