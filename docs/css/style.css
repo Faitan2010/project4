@@ -534,6 +534,9 @@ video {
 .top-\[50\%\] {
   top: 50%;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .-left-16 {
   left: -4rem;
 }
@@ -548,9 +551,6 @@ video {
 }
 .-left-9 {
   left: -2.25rem;
-}
-.bottom-0 {
-  bottom: 0px;
 }
 .-top-6 {
   top: -1.5rem;
@@ -694,8 +694,8 @@ video {
 .w-\[188px\] {
   width: 188px;
 }
-.w-1\/2 {
-  width: 50%;
+.max-w-full {
+  max-width: 100%;
 }
 .max-w-\[350px\] {
   max-width: 350px;
@@ -739,9 +739,6 @@ video {
 }
 .max-w-\[760px\] {
   max-width: 760px;
-}
-.max-w-full {
-  max-width: 100%;
 }
 .translate-y-\[-50\%\] {
   --tw-translate-y: -50%;
@@ -933,11 +930,14 @@ video {
 .pt-10\.5 {
   padding-top: 2.625rem;
 }
-.pb-10 {
-  padding-bottom: 2.5rem;
+.pb-3\.25 {
+  padding-bottom: 0.8125rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 .pl-5 {
   padding-left: 1.25rem;
@@ -950,6 +950,9 @@ video {
 }
 .pt-0 {
   padding-top: 0px;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -1004,12 +1007,6 @@ video {
 }
 .pr-0 {
   padding-right: 0px;
-}
-.pb-3\.25 {
-  padding-bottom: 0.8125rem;
-}
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 .text-center {
   text-align: center;
@@ -1326,46 +1323,21 @@ video {
   content: var(--tw-content);
 }
 
-.hover\:bg-\[\#22f7e5\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 247 229 / var(--tw-bg-opacity));
-}
-
 .hover\:text-\[red\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#195004\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(25 80 4 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#ecf062\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(236 240 98 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#f2f936\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(242 249 54 / var(--tw-text-opacity));
-}
-
-.hover\:text-\[\#ff3a3a\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 58 58 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
 
-.hover\:opacity-50:hover {
-  opacity: 0.5;
-}
-
 .hover\:opacity-75:hover {
   opacity: 0.75;
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
 }
 
 .hover\:grayscale:hover {
