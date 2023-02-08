@@ -1,3 +1,4 @@
+import {ProgressBar} from "./ProgressBar.js";
 
 
 $(document).ready(function(){
@@ -45,13 +46,15 @@ $(document).ready(function(){
   menu.addEventListener('click', (e) => {
     header.classList.toggle('active');
 })
-  const anchorButton = new AnchorButton()
-    anchorButton.init()
+  new AnchorButton();
 
-  const submitForm = new SubmitForm()
+  new SubmitForm();
 
+    const progressBar = document.querySelector('.progress-bar');
 
-    
+    if (progressBar) {
+        new ProgressBar(progressBar);
+    }
   });
 
 
@@ -74,7 +77,7 @@ function AnchorButton() {
     this.formButton = document.querySelector('#button-with-form');
 
     const _this = this
-    
+
     this.movingToContent = () => {
         _this.formButton.scrollIntoView({block: "center", behavior: "smooth"})
     }
