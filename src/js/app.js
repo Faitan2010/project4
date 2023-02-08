@@ -46,7 +46,7 @@ $(document).ready(function(){
   menu.addEventListener('click', (e) => {
     header.classList.toggle('active');
 })
-  new AnchorButton();
+  new AnchorButton()
 
   new SubmitForm();
 
@@ -77,7 +77,7 @@ function AnchorButton() {
     this.formButton = document.querySelector('#button-with-form');
 
     const _this = this
-
+    
     this.movingToContent = () => {
         _this.formButton.scrollIntoView({block: "center", behavior: "smooth"})
     }
