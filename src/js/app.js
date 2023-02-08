@@ -1,3 +1,4 @@
+const { ProgressBar } = require("./progress-bar");
 
 
 $(document).ready(function(){
@@ -45,13 +46,12 @@ $(document).ready(function(){
   menu.addEventListener('click', (e) => {
     header.classList.toggle('active');
 })
-  const anchorButton = new AnchorButton()
-    anchorButton.init()
+  new AnchorButton()
 
-  const submitForm = new SubmitForm()
+  new SubmitForm()
 
 
-    
+    new ProgressBar()
   });
 
 
