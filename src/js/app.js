@@ -47,8 +47,11 @@ $(document).ready(function(){
     header.classList.toggle('active');
 })
   new AnchorButton()
+  
+  const form = document.querySelector('#email-form')
 
-  new SubmitForm();
+  const submitForm = new SubmitForm(form);
+  submitForm.init()
 
     const progressBar = document.querySelector('.progress-bar');
 
@@ -66,6 +69,23 @@ function SubmitForm (form) {
   this.formField = form.querySelector('#email-form');
   this.emailInput = form.querySelector('.email');
   this.EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+  this.validateEmail = (value) => {
+    return _this.EMAIL_REGEXP.test(value)
+  };
+
+
+  this.updateInput = (e) => {
+    if (_this.validateEmail(e.target.value)) {
+      e.target.style.borderColor = 'green';
+      return
+    }
+      e.target.style.borderColor = 'red';
+    
+  }
+  this.init = () => {
+    _this.emailInput.addEventListener('input', _this.updateInput);
+  }
 
 }
 
