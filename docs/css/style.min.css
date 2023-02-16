@@ -1187,7 +1187,7 @@ video {
     flex-direction: column;
     gap: 73px;
     width: 100%;
-    height: calc(100vh - 103px);
+    height: 100vh;
     background-color: white;
     z-index: 98876;
     top: 100%;
@@ -1198,7 +1198,7 @@ video {
     text-align: center;
   }
   .header-on-mobile.active {
-    height: calc(100vh - 73px);
+    height: 100vh;
   }
   .menu-header.active .header-on-mobile {
     transform: translateX(0);
