@@ -76,7 +76,7 @@ module.exports = {
             },
             gridTemplateColumns: {
                 'country-table-flag' : '37% minmax(0, 1fr)',
-                'country-table-text': '32px minmax(0, 1fr)',
+                'country-table-text': '50% minmax(0, 1fr)',
                 'country-table-image': '24px minmax(0, 1fr)',
                 'country-table-tablet': '30% minmax(0, 1fr)',
                 'country-table-line': '20% minmax(0, 1fr)',
