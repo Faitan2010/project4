@@ -1371,11 +1371,6 @@ video {
     max-width: 471px;
   }
 
-  .sm\:max-w-max {
-    max-width: -moz-max-content;
-    max-width: max-content;
-  }
-
   .sm\:grid-cols-country-table-flag {
     grid-template-columns: 37% minmax(0, 1fr);
   }
