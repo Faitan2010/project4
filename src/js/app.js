@@ -1,5 +1,9 @@
 import {ProgressBar} from "./ProgressBar.js";
 
+import * as flsFunctions from "./modules//functions.js"
+
+flsFunctions.isWebp();
+
 
 $(document).ready(function(){
 
