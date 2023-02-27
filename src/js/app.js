@@ -45,6 +45,8 @@ $(document).ready(function(){
 
   menu.addEventListener('click', (e) => {
     header.classList.toggle('active');
+    document.body.classList.toggle('overflow-hidden');
+    document.body.classList.toggle('overflow-x-hidden')
 })
   new AnchorButton()
   

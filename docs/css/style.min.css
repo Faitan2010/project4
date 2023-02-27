@@ -772,6 +772,9 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .justify-center {
   justify-content: center;
 }
@@ -809,6 +812,9 @@ video {
 }
 .self-center {
   align-self: center;
+}
+.overflow-hidden {
+  overflow: hidden;
 }
 .overflow-x-hidden {
   overflow-x: hidden;
@@ -941,6 +947,9 @@ video {
 }
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+.pt-7 {
+  padding-top: 1.75rem;
 }
 .pl-5 {
   padding-left: 1.25rem;
@@ -1192,7 +1201,6 @@ video {
     z-index: 98876;
     top: 100%;
     left: 0;
-    justify-content: center;
     display: flex;
     transform: translateX(-120vw);
     text-align: center;
