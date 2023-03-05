@@ -5,6 +5,7 @@ import webpcss from 'gulp-webpcss';
 import autoprefixer from 'autoprefixer';
 import tailwindcss from 'tailwindcss';
 import postcss from 'gulp-postcss';
+import cssnano from 'cssnano';
 
 const sass = gulpSass(dartSass);
 
@@ -25,7 +26,10 @@ export const scss = () => {
             tailwindcss(`./tailwind.config.cjs`),
             autoprefixer({
                     grid: 'autoplace',
-                })
+                }),
+            cssnano({
+                preset:'default',
+            }),
         ]))
         .pipe(app.plugins.if(app.isBuild, webpcss(
             {
